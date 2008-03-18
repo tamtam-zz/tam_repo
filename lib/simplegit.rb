@@ -9,6 +9,10 @@ class SimpleGit
     command("git show #{treeish}")
   end
 
+  def log(treeish = 'master')
+    command("git log #{treeish}")
+  end
+
   private
   
     def command(git_cmd)
