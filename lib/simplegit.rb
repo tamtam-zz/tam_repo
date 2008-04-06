@@ -14,7 +14,7 @@ class SimpleGit
   end
 
   def log(treeish = 'master')
-    command("git log -n 20 #{treeish}")
+    command("git log -n 25 #{treeish}")
   end
 
   def ls_tree(treeish = 'master')
