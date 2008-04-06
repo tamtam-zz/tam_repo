@@ -21,8 +21,3 @@ task :default => "pkg/#{spec.name}-#{spec.version}.gem" do
     puts "generated latest version"
 end
 
-desc "Regenerate Documentation"
-task :doc do |t|
- system('rdoc lib/ README --main README --inline-source')
-end
-
