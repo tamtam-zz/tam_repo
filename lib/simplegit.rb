@@ -13,6 +13,10 @@ class SimpleGit
     command("git log #{treeish}")
   end
 
+  def ls_tree(treeish = 'master')
+    command("git ls-tree #{treeish}")
+  end
+
   private
   
     def command(git_cmd)
