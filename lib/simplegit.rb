@@ -18,7 +18,7 @@ class SimpleGit
   end
 
   def ls_tree(treeish = 'master')
-    command("git ls-tree #{treeish}")
+    command("git ls-tree -r -t #{treeish}")
   end
 
   private
