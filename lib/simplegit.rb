@@ -21,6 +21,10 @@ class SimpleGit
     command("git ls-tree -r -t #{treeish}")
   end
 
+  def ls_files
+    command("git ls-files --stage")
+  end
+
   private
   
     def command(git_cmd)
