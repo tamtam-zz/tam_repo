@@ -29,6 +29,10 @@ class SimpleGit
     command("git ls-files --stage")
   end
 
+  def file_type(sha)
+    command("git cat-file -t #{sha}")
+  end
+
   private
   
     def command(git_cmd)
