@@ -17,6 +17,10 @@ class SimpleGit
     command("git log -n 25 #{treeish}")
   end
 
+  def blame(path)
+    command("git blame #{path}")
+  end
+
   def ls_tree(treeish = 'master')
     command("git ls-tree -r -t #{treeish}")
   end
