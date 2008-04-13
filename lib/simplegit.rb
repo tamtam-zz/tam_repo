@@ -21,6 +21,10 @@ class SimpleGit
     command("git blame #{path}")
   end
 
+  def cat-file(path)
+    command("git cat-file -p #{path}")
+  end
+
   def ls_tree(treeish = 'master')
     command("git ls-tree -r -t #{treeish}")
   end
