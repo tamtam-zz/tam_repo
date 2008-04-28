@@ -33,8 +33,8 @@ class SimpleGit
     command("git ls-files --stage")
   end
 
-  def add(file)
-    command("git add #{file}")
+  def file_type(sha)
+    command("git cat-file -t #{sha}")
   end
 
   private
