@@ -26,11 +26,15 @@ class SimpleGit
   end
 
   def ls_tree(treeish = 'master')
-    command("git ls-tree -r -t #{treeish}")
+    command("git ls-tree -r #{treeish}")
   end
 
   def ls_files
     command("git ls-files --stage")
+  end
+
+  def add(file)
+    command("git add #{file}")
   end
 
   private
