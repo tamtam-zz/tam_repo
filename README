@@ -6,4 +6,5 @@ This library calls git commands and returns the output.
 It is an example for the Git Peepcode book that I'm currently writing.
 
 Author : Scott Chacon (schacon@gmail.com)
+         Orange Peel Chacon (opchacon@gmail.com)
          Magnus O. Chacon (mchacon@gmail.com)
