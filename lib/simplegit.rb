@@ -37,6 +37,10 @@ class SimpleGit
     command("git cat-file -t #{sha}")
   end
 
+  def file_size(sha)
+    command("git cat-file -s #{sha}")
+  end
+
   private
   
     def command(git_cmd)
