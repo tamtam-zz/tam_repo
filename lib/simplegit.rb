@@ -13,8 +13,8 @@ class SimpleGit
     command("git show #{treeish}")
   end
 
-  def log(treeish = 'master')
-    command("git log -n 25 #{treeish}")
+  def log(treeish = 'master', number = 5)
+    command("git log -n #{number} #{treeish}")
   end
 
   def blame(path)
