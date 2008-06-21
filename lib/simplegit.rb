@@ -21,7 +21,7 @@ class SimpleGit
     command("git blame #{path}")
   end
 
-  def cat-file(path)
+  def cat_file(path)
     command("git cat-file -p #{path}")
   end
 
